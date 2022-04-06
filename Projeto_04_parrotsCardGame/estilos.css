@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: #effabf;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: bold;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    letter-spacing: -0.004em;
+    color: #75B79E;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cartas{
+    width: 177px;
+    height: 326px;
+}
+
+.carta{
+    width: 117px;
+    height: 146px;
+    background: #A7E9AF;
+    border: 1px solid #99CEA8;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-right: 34px;
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/front\ 1.png);
+    flex-shrink: 0;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+}
+
+.carta img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 540px) {
+    
+    h1{
+    width: 100%;
+    }
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+    .carta{
+        margin-right: calc((100% - 120px) / 2);
+        margin-left: calc((100% - 120px) / 2);
+}
+}
