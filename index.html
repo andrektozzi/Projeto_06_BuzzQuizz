@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuzzQuizz</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <header class="titulo-buzz-quizz">BuzzQuizz</header>
+    <div class="lista-quizz">
+        <div class="lista-vazia-quizz">
+            <span>Você não criou nenhum quizz ainda :(</span>
+            <div class="botao-criar-quizz">Criar Quizz</div>
+        </div>
+        <div class="seus-quizzes">
+            <header>
+                <h1>Seus Quizzes</h1>
+                <ion-icon name="add-circle"></ion-icon>
+            </header>
+            <ul></ul>
+        </div>
+        <div class="lista-todos-os-quizzes">
+            <header>
+                <h1>Todos os Quizzes</h1>
+            </header>
+            <ul></ul>            
+        </div>
+
+        <main class="pagina-quizz">
+            <header class="banner-quizz">
+                <img class="banner-image" src="">
+                <div class="sombra"></div>
+                <span class="titulo-quizz"></span>
+            </header>
+            <section class="questoes-quizz"></section>
+            <section class="resultado"></section>
+            <button class="reiniciar">Reiniciar Quizz</button>
+            <button class="home">Voltar pra home</button>
+        </main>
+
+        <section class="novo-quizz"></section>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="scripts.js"></script>
+</body>
