@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BuzzQuizz</title>
     
+    
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -16,7 +17,7 @@
 <body>
    
     <header class="titulo-buzz-quizz">BuzzQuizz</header>
-    <div class="lista-quizz">
+    <main class="lista-quizz">
         <div class="lista-vazia-quizz">
             <span>Você não criou nenhum quizz ainda :(</span>
             <div class="botao-criar-quizz">Criar Quizz</div>
@@ -35,21 +36,22 @@
             <ul></ul>            
         </div>
 
-        <main class="pagina-quizz">
-            <header class="banner-quizz">
-                <img class="banner-image" src="">
-                <div class="sombra"></div>
-                <span class="titulo-quizz"></span>
-            </header>
-            <section class="questoes-quizz"></section>
-            <section class="resultado"></section>
-            <button class="reiniciar">Reiniciar Quizz</button>
-            <button class="home">Voltar pra home</button>
-        </main>
+    </main>
 
-        <section class="novo-quizz"></section>
+    <main class="pagina-quizz escondido">
+        <header class="banner-quizz">
+            <img class="banner-image" src="" alt="">
+            <span class="titulo-quizz"></span>
+        </header>
+        <ul class="questoes-quizz"></ul>
+        <section class="resultado escondido"></section>
+        <button class="reiniciar" onclick="reiniciarQuizz()">Reiniciar Quizz</button>
+        <button class="home" onclick="voltarHome()">Voltar pra home</button>
+    </main>
 
-    </div>
+    <main class="novo-quizz escondido"></main>
+
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="scripts.js"></script>
