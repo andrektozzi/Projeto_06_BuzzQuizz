@@ -7,8 +7,8 @@
     <title>BuzzQuizz</title>
     
     
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
             <span>Você não criou nenhum quizz ainda :(</span>
             <div class="botao-criar-quizz" onclick="criarQuizz()">Criar Quizz</div>
         </div>
-        <div class="seus-quizzes">
+        <div class="lista-seus-quizzes escondido">
             <header>
                 <h1>Seus Quizzes</h1>
                 <ion-icon name="add-circle" onclick="criarQuizz()"></ion-icon>
@@ -49,7 +49,13 @@
         <button class="home" onclick="voltarHome()">Voltar pra home</button>
     </main>
 
-    <main class="novo-quizz escondido"></main>
+    <main class="criar novo-quizz escondido"></main> 
+
+    <main class="criar novo-quizz-perguntas escondido"></main>
+
+    <main class="criar novo-quizz-niveis escondido"></main>
+    
+    <main class="criar novo-quizz-pronto escondido"></main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
