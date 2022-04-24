@@ -265,19 +265,10 @@ function enviarQuizz () {
 
 
                 let listaIDLocal = localStorage.getItem("IDsLocal")
-                console.log("teste: pegou idslocal (vai estar em string)")
-                console.log(listaIDLocal)
                 let listaIDLocalarray = JSON.parse(listaIDLocal)
-                console.log("teste: transformou string em array")
-                console.log(listaIDLocalarray)
                 listaIDLocalarray.push(quizzCriado.data.id)
-                console.log("teste: colocou na array o id do quizz atual")
-                console.log(listaIDLocalarray)
                 let listaIDLocalstring = JSON.stringify(listaIDLocalarray)
-                console.log("teste: transformou em string novamente")
-                console.log(listaIDLocalstring)
                 localStorage.setItem("IDsLocal", listaIDLocalstring)
-                console.log("teste: enviou nova lista para o localstorage, teste com localStorage.getItem(IDsLocal)")
 
             }
 

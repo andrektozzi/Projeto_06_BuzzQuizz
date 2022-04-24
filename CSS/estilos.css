@@ -23,7 +23,6 @@ ion-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: roboto;
     font-weight: 700;
     font-size: 37px;
     color: #FFFFFF;
@@ -85,6 +84,13 @@ ion-icon {
     margin-bottom: 12px;
 }
 
+.titulo-buzz-quizz h1 {
+    font-weight: 700;
+    font-size: 37px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
 .lista-seus-quizzes header h1 {
     font-family: roboto;
     font-weight: 700;
@@ -133,6 +139,7 @@ ion-icon {
     text-align: center;
     color: #FFFFFF;
     font-size: 39px;
+    line-height: 46px;
     overflow: hidden;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57));
     margin-bottom: 44px;
@@ -156,7 +163,7 @@ ion-icon {
     align-items: center;
 }
 
-.pagina-quizz .pergunta {
+.pergunta {
     width: 759px;
     height: auto;
     display: flex;
@@ -169,7 +176,7 @@ ion-icon {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
     scroll-margin-top: 80px;
 }
-.pagina-quizz .pergunta .titulo-pergunta {
+.titulo-pergunta {
     width: 100%;
     height: 138px;
     margin-bottom: 20px;
@@ -186,14 +193,14 @@ ion-icon {
     color: #FFFFFF;
 }
 
-.pagina-quizz .pergunta .respostas {
+.respostas {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.pagina-quizz .pergunta .respostas .resposta {
+.resposta {
     width: 330px;
 
     display: flex;
@@ -201,11 +208,11 @@ ion-icon {
     margin: 0 25px 18px 0;
 }
 
-.pagina-quizz .pergunta .respostas .resposta:nth-child(2n) {
+.resposta:nth-child(2n) {
     margin-right: 0;
 }
 
-.pagina-quizz .pergunta .respostas .resposta .imagem-resposta {
+.imagem-resposta {
     width: 100%;
     height: 175px;
     overflow: hidden;
@@ -215,11 +222,11 @@ ion-icon {
     cursor: pointer;
 }
 
-.pagina-quizz .pergunta .respostas .resposta img {
+.resposta img {
     width: 100%;
 }
 
-.pagina-quizz .pergunta .respostas .resposta span {
+.resposta span {
     width: 100%;
 
     font-style: normal;
@@ -231,7 +238,7 @@ ion-icon {
     
 }
 
-.pagina-quizz .resultado-quizz {
+.resultado-quizz {
     width: 759px;
     height: auto;
     display: flex;
@@ -244,7 +251,7 @@ ion-icon {
     scroll-margin-top: 80px;
 }
 
-.pagina-quizz .resultado-quizz header {
+.resultado-quizz header {
     width: 100%;
     padding: 22px 20px 22px 20px;
     margin-bottom: 18px;
@@ -269,12 +276,12 @@ ion-icon {
     justify-content: space-between;
 }
 
-.pagina-quizz .resultado-quizz img {
+.resultado-quizz img {
     width: 364px;
     height: auto;
 }
 
-.pagina-quizz .resultado-quizz .resultados span {
+.resultado-quizz span {
     width: 328px;
 
     font-style: normal;
@@ -434,7 +441,7 @@ ion-icon {
     margin-bottom: 22px;
 }
 
-.criar-quizz:last-of-type{
+.criar-quizz:last-of-type {
     margin-bottom: 80px;
 }
 
@@ -513,4 +520,91 @@ margin-bottom: 16px;
 }
 button:last-of-type {
     margin-bottom: 200px;
+}
+
+@media (max-width: 1100px) {
+    main {
+        max-width: 100%;
+    }
+    .lista-quizz {
+        width: 95%;
+        margin-top: 106px;
+    }
+    .lista-quizz > * {
+        width: 100%;
+    }
+    .lista-seus-quizzes > * {
+        width: 100%;
+    }
+    .lista-todos-os-quizzes {
+        margin-top: 20px
+    }
+    .lista-todos-os-quizzes > * {
+        width: 100%;
+    }
+    .quizz-listado {
+        width: 100%;
+        height: 200px;
+        margin: 0px 0px 12px 0px;
+    }
+    
+
+    .pagina-quizz .banner-quizz {
+        height: 160px;
+        font-size: 19px;
+        line-height: 22px;
+    }
+    .pergunta {
+        width: 100%;
+        padding: 18px;
+    }
+    .titulo-pergunta {
+        padding: 0 16px;
+        font-size: 19px;
+        line-height: 22px;
+    }
+    .resposta {
+        width: 48%;
+        margin: 0px 12px 12px 0px;
+    }
+    .resposta span {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .imagem-resposta {
+        height: 120px;
+    }
+    .respostas {
+        width: 100%;
+
+    }
+    .resultado-quizz {
+        width: 100%;
+    }
+    .resultado-quizz header {
+        font-size: 19px;
+        line-height: 22px;
+    }
+    .resultado-quizz img {
+        width: 100%;
+    }
+    .resultado-quizz span {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .criar-quizz {
+        width: 100%;
+    }
+    .etapa {
+        margin-top: 37px;
+    }
+    .criar-quizz:last-of-type {
+        margin-bottom: 29px;
+    }
+    .quizz-finalizado {
+        width: 92%;
+        height: 220px;
+        margin-bottom: 24px;
+    }
 }
